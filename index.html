@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intention | Waging war against doomscrolling, distractions, and DMs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'dm-sans': ['DM Sans', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'massive': ['128px', '1.1'],
+                        'massive-mobile': ['48px', '1.1'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white font-dm-sans">
+    <div class="min-h-screen">
+        
+        <!-- Section 1: Social media is broken -->
+        <section class="px-8 py-32 md:px-16 lg:px-24">
+            <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight">
+                Social media is broken.
+            </h1>
+            <div class="max-w-4xl space-y-8">
+                <p class="text-3xl md:text-5xl font-medium leading-tight">
+                    Your apps are designed to be addictive.
+                </p>
+                <p class="text-3xl md:text-5xl font-medium leading-tight">
+                    Keeping you glued to your screen and distracting you from the things that truly matter in life.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: So we're fixing it -->
+        <section class="px-8 py-32 md:px-16 lg:px-24">
+            <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight">
+                So we're fixing it.
+            </h1>
+            <div class="max-w-4xl space-y-8">
+                <p class="text-3xl md:text-5xl font-medium leading-tight">
+                    We're taking the apps you love to hate, ripping out everything that doesn't need to be there, and leaving just the parts that matter.
+                </p>
+                <p class="text-3xl md:text-5xl font-medium leading-tight">
+                    So you can stay connected on your terms.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Join us -->
+        <section class="px-8 py-32 md:px-16 lg:px-24">
+            <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight">
+                Join us.
+            </h1>
+            <div class="max-w-4xl space-y-8 mb-16">
+                <p class="text-3xl md:text-5xl font-medium leading-tight">
+                    We're on a mission to make technology serve humanity again.
+                </p>
+                <p class="text-3xl md:text-5xl font-medium leading-tight">
+                    Sign up to know when we launch.
+                </p>
+            </div>
+            
+            <!-- Intake Form -->
+            <form class="max-w-2xl">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email"
+                        class="flex-1 px-6 py-4 text-xl bg-transparent border-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors"
+                        required
+                    >
+                    <button 
+                        type="submit"
+                        class="px-8 py-4 text-xl bg-white text-black font-medium hover:bg-gray-200 transition-colors"
+                    >
+                        Join
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Navigation Section -->
+        <section class="px-8 py-32 md:px-16 lg:px-24 border-t border-gray-800">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-16 tracking-tight">
+                    Explore More
+                </h2>
+                <nav class="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-16">
+                    <a href="#" class="text-3xl md:text-5xl font-bold tracking-tight hover:text-gray-300 transition-colors">
+                        HOME
+                    </a>
+                    <a href="#" class="text-3xl md:text-5xl font-bold tracking-tight hover:text-gray-300 transition-colors">
+                        MISSION
+                    </a>
+                    <a href="#" class="text-3xl md:text-5xl font-bold tracking-tight hover:text-gray-300 transition-colors">
+                        CONTRIBUTE
+                    </a>
+                </nav>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
