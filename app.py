@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory
+from flask import Flask, render_template
 import os
 
 def create_app():
@@ -6,11 +6,19 @@ def create_app():
     
     @app.route('/')
     def index():
-        return send_from_directory('static', 'index.html')
+        return render_template('index.html')
     
-    @app.route('/<path:filename>')
-    def static_files(filename):
-        return send_from_directory('static', filename)
+    @app.route('/mission')
+    def mission():
+        return render_template('mission.html')
+    
+    @app.route('/contribute')
+    def contribute():
+        return render_template('contribute.html')
+    
+    @app.route('/status')
+    def status():
+        return render_template('status.html')
     
     return app
 
