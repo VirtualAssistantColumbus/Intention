@@ -81,7 +81,7 @@ def render_index_a() -> str:
                     >
                     <textarea 
                         name="comments"
-                        placeholder="(optional) What social media platform do you want us to fix first? Leave any comments or suggestions here!"
+                        placeholder="What social media platform do you want us to fix first? Leave any comments or suggestions here! (optional)"
                         rows="4"
                         class="px-6 py-4 text-xl bg-transparent border-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors resize-vertical"
                     ></textarea>
