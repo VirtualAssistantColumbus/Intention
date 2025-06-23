@@ -11,6 +11,9 @@ from pages.render_status import render_status
 
 from shared_dependencies import shared
 
+#TODO:
+# - How to preserve UTM source when the user changes pages. (This is only relevant if we want the utm source captured in KickoffLabs form). Not necessary.
+
 class Version(StrEnum):
     A = "a"  # basic
     # B = "b"  # enhanced - When ready

@@ -68,46 +68,6 @@ def render_base(content: str, version: str = "") -> str:
                     </div>
                 </section>
             </div>
-
-            <!-- Custom Source Tracking Script -->
-            <script>
-                (function() {{
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const customSource = urlParams.get('custom-source');
-                    
-                    if (customSource) {{
-                        document.addEventListener('DOMContentLoaded', function() {{
-                            const links = document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]');
-                            links.forEach(link => {{
-                                if (link.getAttribute('href').startsWith('#')) return;
-                                
-                                try {{
-                                    const url = new URL(link.href, window.location.origin);
-                                    url.searchParams.set('custom-source', customSource);
-                                    link.href = url.toString();
-                                }} catch (e) {{
-                                    const separator = link.href.includes('?') ? '&' : '?';
-                                    link.href += separator + 'custom-source=' + encodeURIComponent(customSource);
-                                }}
-                            }});
-                            
-                            const forms = document.querySelectorAll('form');
-                            forms.forEach(form => {{
-                                const existingInput = form.querySelector('input[name="custom-source"]');
-                                if (existingInput) {{
-                                    existingInput.value = customSource;
-                                }} else {{
-                                    const hiddenInput = document.createElement('input');
-                                    hiddenInput.type = 'hidden';
-                                    hiddenInput.name = 'custom-source';
-                                    hiddenInput.value = customSource;
-                                    form.appendChild(hiddenInput);
-                                }}
-                            }});
-                        }});
-                    }}
-                }})();
-            </script>
         </body>
         </html>
     """) 

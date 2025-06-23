@@ -1,8 +1,70 @@
 from utils.html_ import html
 from pages.render_base import render_base
 
+
 def render_index_a() -> str:
+    from app import get_context
+    context = get_context()
+    
     content = html(f"""
+        <!-- UTM Source Tracking Script -->
+        <script>
+            (function() {{
+                const urlParams = new URLSearchParams(window.location.search);
+                const utmSource = urlParams.get('utm_source');
+                
+                if (utmSource) {{
+                    document.addEventListener('DOMContentLoaded', function() {{
+                        const links = document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]');
+                        links.forEach(link => {{
+                            if (link.getAttribute('href').startsWith('#')) return;
+                            
+                            try {{
+                                const url = new URL(link.href, window.location.origin);
+                                url.searchParams.set('utm_source', utmSource);
+                                link.href = url.toString();
+                            }} catch (e) {{
+                                const separator = link.href.includes('?') ? '&' : '?';
+                                link.href += separator + 'utm_source=' + encodeURIComponent(utmSource);
+                            }}
+                        }});
+                        
+                        const forms = document.querySelectorAll('form');
+                        forms.forEach(form => {{
+                            const existingInput = form.querySelector('input[name="utm_source"]');
+                            if (existingInput) {{
+                                existingInput.value = utmSource;
+                            }} else {{
+                                const hiddenInput = document.createElement('input');
+                                hiddenInput.type = 'hidden';
+                                hiddenInput.name = 'utm_source';
+                                hiddenInput.value = utmSource;
+                                form.appendChild(hiddenInput);
+                            }}
+                        }});
+                    }});
+                }}
+            }})();
+        </script>
+
+        <!-- Form Submission Tracking Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {{
+                const form = document.querySelector('form');
+                if (form) {{
+                    form.addEventListener('submit', function(e) {{
+                        // Track form submission with gtag
+                        if (typeof gtag !== 'undefined') {{
+                            gtag('event', 'form_submit', {{
+                                'event_category': 'engagement',
+                                'event_label': 'join_waitlist'
+                            }});
+                        }}
+                    }});
+                }}
+            }});
+        </script>
+
         <!-- Section 1: Social media is broken -->
         <section class="px-8 py-32 md:px-16 lg:px-24">
             <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight">
@@ -63,8 +125,8 @@ def render_index_a() -> str:
                         rows="4"
                         class="px-6 py-4 text-xl bg-transparent border-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors resize-vertical"
                     ></textarea>
-                    <input type="hidden" name="custom-source" value="none">
-                    <input type="hidden" name="version" value="a">
+                    <input type="hidden" name="utm_source" value="none">
+                    <input type="hidden" name="version" value="{context.version}">
                     <button 
                         type="submit"
                         class="px-8 py-4 text-xl bg-white text-black font-medium hover:bg-gray-200 transition-colors"
@@ -76,4 +138,4 @@ def render_index_a() -> str:
         </section>
     """)
     
-    return render_base(content, "a") 
+    return render_base(content, "a")
