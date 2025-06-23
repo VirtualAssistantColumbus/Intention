@@ -85,3 +85,18 @@ Environment setup complete:
 Environment(
     runtime_environment=local
 )
+
+[2025-06-22 22:10:00,834] [INFO] [shared_dependencies.py -> environment() -> 64]
+Setting up environment configuration...
+
+[2025-06-22 22:10:00,837] [INFO] [shared_dependencies.py -> environment() -> 72]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-06-22 22:10:00,837] [INFO] [shared_dependencies.py -> environment() -> 75]
+Successfully parsed runtime environment: local
+
+[2025-06-22 22:10:00,837] [INFO] [shared_dependencies.py -> environment() -> 84]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)

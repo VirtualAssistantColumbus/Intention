@@ -106,7 +106,7 @@ def render_base(content: str) -> str:
             <div class="min-h-screen">
                 {content}
                 
-                <!-- Navigation Section -->
+                <!-- Navigation Section (Hidden)
                 <section class="px-8 py-32 md:px-16 lg:px-24 border-t border-gray-800">
                     <div class="text-center">
                         <h2 class="text-4xl md:text-6xl font-bold mb-16 tracking-tight">
@@ -125,6 +125,7 @@ def render_base(content: str) -> str:
                         </nav>
                     </div>
                 </section>
+                -->
             </div>
         </body>
         </html>
