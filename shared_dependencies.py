@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from enum import StrEnum, auto
+from logging import Logger
 import os
 
 from utils.cached_field import CachedField
@@ -54,19 +55,33 @@ class Shared:
         pass
     
     @CachedField
+    def logger(self) -> Logger:
+        from utils.logger import create_logger
+        return create_logger()
+    
+    @CachedField
     def environment(self) -> Environment:
+        self.logger.info("Setting up environment configuration...")
+        
         RUNTIME_ENVIRONMENT = os.environ.get('RUNTIME_ENVIRONMENT')
         if not RUNTIME_ENVIRONMENT:
             # Default to production if not set
+            self.logger.info("RUNTIME_ENVIRONMENT not set, defaulting to production")
             runtime_environment = RuntimeEnvironment.PRODUCTION
         else:
+            self.logger.info(f"Found RUNTIME_ENVIRONMENT: '{RUNTIME_ENVIRONMENT}'")
             try:
                 runtime_environment = RuntimeEnvironment(RUNTIME_ENVIRONMENT.lower())
+                self.logger.info(f"Successfully parsed runtime environment: {runtime_environment}")
             except ValueError:
+                self.logger.error(f"Invalid RUNTIME_ENVIRONMENT specified: '{RUNTIME_ENVIRONMENT}'. Must be 'local' or 'production'.")
                 raise EnvSetupError(f"Invalid RUNTIME_ENVIRONMENT specified: '{RUNTIME_ENVIRONMENT}'. Must be 'local' or 'production'.")
 
-        return Environment(
+        environment = Environment(
             runtime_environment=runtime_environment
         )
+        
+        self.logger.info(f"Environment setup complete:\n{environment}")
+        return environment
 
 shared = Shared() 

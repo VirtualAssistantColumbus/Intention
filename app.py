@@ -9,6 +9,8 @@ from pages.render_mission import render_mission
 from pages.render_contribute import render_contribute
 from pages.render_status import render_status
 
+from shared_dependencies import shared
+
 class Version(StrEnum):
     A = "a"  # basic
     # B = "b"  # enhanced - When ready
@@ -27,6 +29,9 @@ def get_context() -> RequestContext:
     return g._context
 
 def create_app():
+    # Initialize the environment
+    shared.environment
+    
     app = Flask(__name__, static_folder='static')
     
     @app.before_request
