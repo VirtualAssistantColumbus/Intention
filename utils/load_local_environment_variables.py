@@ -17,13 +17,14 @@ def load_local_environment_variables() -> None:
     if loaded:
         return
     
-    # Locally, you can set an actual OS environment variable: INTENTION_APP_PATH = C:\Path\To\Website\
-    LOCAL_APPLICATION_PATH = os.environ.get("INTENTION_APP_PATH")
-    if LOCAL_APPLICATION_PATH:
-        dotenv_path = LOCAL_APPLICATION_PATH + ".env"
+    # Automatically find project root directory and load .env from there
+    current_file_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(current_file_dir)  # Go up one level from utils/ to project root
+    dotenv_path = os.path.join(project_root, ".env")
+    
+    if os.path.exists(dotenv_path):
         load_dotenv(dotenv_path)
     else:
-        # Try loading from current directory
-        load_dotenv()
+        pass
 
-    loaded = True 
+    loaded = True
