@@ -161,4 +161,4 @@ def render_contribute(version: str) -> str:
         </section>
     """)
     
-    return render_base(content, version) 
+    return render_base(content) 

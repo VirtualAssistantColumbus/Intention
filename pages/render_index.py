@@ -7,46 +7,6 @@ def render_index_a() -> str:
     context = get_context()
     
     content = html(f"""
-        <!-- UTM Source Tracking Script -->
-        <script>
-            (function() {{
-                const urlParams = new URLSearchParams(window.location.search);
-                const utmSource = urlParams.get('utm_source');
-                
-                if (utmSource) {{
-                    document.addEventListener('DOMContentLoaded', function() {{
-                        const links = document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]');
-                        links.forEach(link => {{
-                            if (link.getAttribute('href').startsWith('#')) return;
-                            
-                            try {{
-                                const url = new URL(link.href, window.location.origin);
-                                url.searchParams.set('utm_source', utmSource);
-                                link.href = url.toString();
-                            }} catch (e) {{
-                                const separator = link.href.includes('?') ? '&' : '?';
-                                link.href += separator + 'utm_source=' + encodeURIComponent(utmSource);
-                            }}
-                        }});
-                        
-                        const forms = document.querySelectorAll('form');
-                        forms.forEach(form => {{
-                            const existingInput = form.querySelector('input[name="utm_source"]');
-                            if (existingInput) {{
-                                existingInput.value = utmSource;
-                            }} else {{
-                                const hiddenInput = document.createElement('input');
-                                hiddenInput.type = 'hidden';
-                                hiddenInput.name = 'utm_source';
-                                hiddenInput.value = utmSource;
-                                form.appendChild(hiddenInput);
-                            }}
-                        }});
-                    }});
-                }}
-            }})();
-        </script>
-
         <!-- Form Submission Tracking Script -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {{
@@ -62,7 +22,7 @@ def render_index_a() -> str:
                         }}
                     }});
                 }}
-            }});
+            }}
         </script>
 
         <!-- Section 1: Social media is broken -->
@@ -125,7 +85,7 @@ def render_index_a() -> str:
                         rows="4"
                         class="px-6 py-4 text-xl bg-transparent border-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors resize-vertical"
                     ></textarea>
-                    <input type="hidden" name="utm_source" value="none">
+                    <input type="hidden" name="utm_source" value="{context.utm_source or 'none'}">
                     <input type="hidden" name="version" value="{context.version}">
                     <button 
                         type="submit"
@@ -138,4 +98,4 @@ def render_index_a() -> str:
         </section>
     """)
     
-    return render_base(content, "a")
+    return render_base(content)

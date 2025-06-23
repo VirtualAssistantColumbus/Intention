@@ -22,9 +22,10 @@ class Version(StrEnum):
 class RequestContext:
     version: Version = Version.A
     update_cookie: bool = False
+    utm_source: str = ""
 
-def set_context(version: Version, update_cookie: bool = False) -> None:
-    g._context = RequestContext(version=version, update_cookie=update_cookie)
+def set_context(version: Version, update_cookie: bool = False, utm_source: str = "") -> None:
+    g._context = RequestContext(version=version, update_cookie=update_cookie, utm_source=utm_source)
 
 def get_context() -> RequestContext:
     if not hasattr(g, '_context'):
@@ -41,15 +42,18 @@ def create_app():
     def assign_version():
         # Check if we're forcing a version change
         force_version = request.args.get('force_version')
+        # Get utm_source from query parameters
+        utm_source = request.args.get('utm_source', '')
+        
         if force_version and force_version in Version:
-            set_context(version=Version(force_version), update_cookie=True)
+            set_context(version=Version(force_version), update_cookie=True, utm_source=utm_source)
         else:
             existing_version = request.cookies.get('version_id', Version.A)
             try:
                 version = Version(existing_version)
             except ValueError:
                 version = Version.A  # fallback for invalid cookie values
-            set_context(version=version, update_cookie=False)
+            set_context(version=version, update_cookie=False, utm_source=utm_source)
 
     @app.after_request  
     def set_version_cookie(response):

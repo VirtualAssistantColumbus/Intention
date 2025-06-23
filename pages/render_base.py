@@ -1,7 +1,10 @@
 from utils.html_ import html
 from shared_dependencies import shared
 
-def render_base(content: str, version: str = "") -> str:
+def render_base(content: str) -> str:
+    from app import get_context
+    context = get_context()
+    
     debug_mode = "true" if shared.environment.gtag_debug_mode else "false"
     
     return html(f"""
@@ -20,7 +23,7 @@ def render_base(content: str, version: str = "") -> str:
                 gtag('js', new Date());
                 gtag('config', 'G-G3RS7R2EE3', {{debug_mode: {debug_mode}}});
                 
-                {f"gtag('set', 'user_properties', {{version_id: '{version}'}});" if version else ""}
+                {f"gtag('set', 'user_properties', {{version_id: '{context.version}'}});" if context.version else ""}
             </script>
             
             <script src="https://cdn.tailwindcss.com"></script>
@@ -43,6 +46,61 @@ def render_base(content: str, version: str = "") -> str:
                     }}
                 }}
             </script>
+            
+            {f'''
+            <!-- UTM Source Preservation Script -->
+            <script>
+                (function() {{
+                    const utmSource = "{context.utm_source}";
+                    
+                    if (utmSource) {{
+                        // Add utm_source to current URL if not already present
+                        const currentUrl = new URL(window.location);
+                        if (!currentUrl.searchParams.has('utm_source')) {{
+                            currentUrl.searchParams.set('utm_source', utmSource);
+                            window.history.replaceState(null, '', currentUrl.toString());
+                        }}
+                        
+                        // Wait for DOM to be ready
+                        document.addEventListener('DOMContentLoaded', function() {{
+                            // Update all internal links
+                            const links = document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]');
+                            links.forEach(link => {{
+                                if (link.getAttribute('href').startsWith('#')) return;
+                                
+                                try {{
+                                    const url = new URL(link.href, window.location.origin);
+                                    if (!url.searchParams.has('utm_source')) {{
+                                        url.searchParams.set('utm_source', utmSource);
+                                        link.href = url.toString();
+                                    }}
+                                }} catch (e) {{
+                                    const separator = link.href.includes('?') ? '&' : '?';
+                                    if (!link.href.includes('utm_source=')) {{
+                                        link.href += separator + 'utm_source=' + encodeURIComponent(utmSource);
+                                    }}
+                                }}
+                            }});
+                            
+                            // Update all forms with hidden utm_source input
+                            const forms = document.querySelectorAll('form');
+                            forms.forEach(form => {{
+                                const existingInput = form.querySelector('input[name="utm_source"]');
+                                if (existingInput) {{
+                                    existingInput.value = utmSource;
+                                }} else {{
+                                    const hiddenInput = document.createElement('input');
+                                    hiddenInput.type = 'hidden';
+                                    hiddenInput.name = 'utm_source';
+                                    hiddenInput.value = utmSource;
+                                    form.appendChild(hiddenInput);
+                                }}
+                            }});
+                        }});
+                    }}
+                }})();
+            </script>
+            ''' if context.utm_source else ""}
         </head>
         <body class="bg-black text-white font-dm-sans">
             <div class="min-h-screen">
