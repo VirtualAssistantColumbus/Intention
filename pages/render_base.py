@@ -1,6 +1,9 @@
-from utils.html import html
+from utils.html_ import html
+from shared_dependencies import shared
 
 def render_base(content: str, version: str = "") -> str:
+    debug_mode = "true" if shared.environment.gtag_debug_mode else "false"
+    
     return html(f"""
         <!DOCTYPE html>
         <html lang="en">
@@ -15,7 +18,7 @@ def render_base(content: str, version: str = "") -> str:
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){{dataLayer.push(arguments);}}
                 gtag('js', new Date());
-                gtag('config', 'G-G3RS7R2EE3', {{debug_mode: true}});
+                gtag('config', 'G-G3RS7R2EE3', {{debug_mode: {debug_mode}}});
                 
                 {f"gtag('set', 'user_properties', {{version_id: '{version}'}});" if version else ""}
             </script>
