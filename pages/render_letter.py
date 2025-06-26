@@ -21,25 +21,9 @@ def render_letter() -> str:
                             }});
                         }}
                         
-                        // Track Lead conversion with Facebook Pixel
+                        // Track Complete Registration with Facebook Pixel
                         if (typeof fbq !== 'undefined') {{
-                            const emailValue = form.querySelector('input[name="email"]')?.value || '';
-                            const utmSource = form.querySelector('input[name="utm_source"]')?.value || 'direct';
-                            
-                            fbq('track', 'Lead', {{
-                                content_name: 'Waitlist Signup',
-                                content_category: 'Engagement',
-                                source: 'website',
-                                utm_source: utmSource,
-                                // Note: We don't send PII like email to Facebook Pixel
-                                // Facebook will hash and match emails automatically if user is logged in
-                            }});
-                            
-                            // Optional: Track custom event for better segmentation
-                            fbq('trackCustom', 'WaitlistSignup', {{
-                                utm_source: utmSource,
-                                page: 'letter'
-                            }});
+                            fbq('track', 'CompleteRegistration');
                         }}
                     }});
                 }}
