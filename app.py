@@ -5,7 +5,7 @@ import os
 
 # Import render functions
 from pages.render_index import render_index_a
-from pages.render_letter import render_letter
+from pages.render_scroll_interrupt_letter import render_scroll_interrupt_letter
 from pages.render_mission import render_mission
 from pages.render_contribute import render_contribute
 from pages.render_status import render_status
@@ -78,9 +78,9 @@ def create_app():
         else:
             return render_index_a()  # fallback
     
-    @app.route('/letter')
+    @app.route('/scroll-interrupt-letter')
     def letter():
-        return render_letter()
+        return render_scroll_interrupt_letter()
      
     @app.route('/mission')
     def mission():

@@ -2,7 +2,7 @@ from utils.html_ import html
 from pages.render_base import render_base
 
 
-def render_letter() -> str:
+def render_scroll_interrupt_letter() -> str:
     from app import get_context
     context = get_context()
     
@@ -59,7 +59,7 @@ def render_letter() -> str:
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We believe that these are essential functions for human beings to thrive, and yet they've all but vanished from our modern-day society.
+                    We believe that these are essential functions for human beings to thrive, and yet they've gone noticeably missing from our modern-day society.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
@@ -83,11 +83,11 @@ def render_letter() -> str:
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We believe that you should control your devices, instead of your devices controlling you. That you should be able to access the apps you need, without a million distractions trying to make you forget what you were trying to do in the first place.
+                    We believe that you should control your devices, instead of your devices controlling you. That you should be able to access the apps you need, without a million distractions trying to make you forget why you opened the app in the first place.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    That's what we're building.
+                    So that's what we're building.
                 </p>           
 
                 <p class="text-xl md:text-2xl leading-relaxed">
@@ -95,11 +95,11 @@ def render_letter() -> str:
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're creating a world that respects your attention so that you can live with intention, a world where technology serves humanity again, so that we can all live our best lives.
+                    We're designing a paradigm shift in the way you connect with social media and your devices, by creating apps that begin and end with intention.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    This is a big vision, and we want you to be a part of it.
+                    We're tackling the problem head on, and we're not afraid to dream big.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed font-medium">
