@@ -9,7 +9,7 @@ def create_logger() -> logging.Logger:
     logger.setLevel(logging.DEBUG)
 
     # Create a timed rotating file handler to create a new log file every day
-    log_directory = "__internal\\logs"
+    log_directory = os.path.join("__internal", "logs")
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)  # Create the log directory if it does not exist
     log_file_name = os.path.join(log_directory, datetime.now().strftime('%Y_%m_%d_app_log.txt'))
