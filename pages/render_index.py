@@ -1,9 +1,23 @@
 from utils.html_ import html
 from pages.render_base import render_base
+from shared_dependencies import route
+from request_context import Version
 
+
+@route('/')
+def index() -> str:
+    from request_context import get_context
+    context = get_context()
+    
+    if context.version == Version.A:
+        return render_index_a()
+    # elif context.version == Version.B:
+    #     return render_index_b()
+    else:
+        return render_index_a()  # fallback
 
 def render_index_a() -> str:
-    from app import get_context
+    from request_context import get_context
     context = get_context()
     
     content = html(f"""

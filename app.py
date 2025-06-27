@@ -1,45 +1,20 @@
-from flask import Flask, request, g
-from dataclasses import dataclass
-from enum import StrEnum
 import os
 
-# Import render functions
-from pages.render_index import render_index_a
-from pages.render_scroll_interrupt_letter import render_scroll_interrupt_letter
-from pages.render_mission import render_mission
-from pages.render_contribute import render_contribute
-from pages.render_status import render_status
+from flask import Flask, request
 
-from shared_dependencies import shared
+from request_context import Version, get_context, set_context
+from shared_dependencies import shared, route_registry
 
 #TODO:
 # - How to preserve UTM source when the user changes pages. (This is only relevant if we want the utm source captured in KickoffLabs form). Not necessary.
-
-class Version(StrEnum):
-    A = "a"  # basic
-    # B = "b"  # enhanced - When ready
-
-@dataclass
-class RequestContext:
-    version: Version = Version.A
-    update_cookie: bool = False
-    utm_source: str = ""
-
-def set_context(version: Version, update_cookie: bool = False, utm_source: str = "") -> None:
-    g._context = RequestContext(version=version, update_cookie=update_cookie, utm_source=utm_source)
-
-def get_context() -> RequestContext:
-    if not hasattr(g, '_context'):
-        g._context = RequestContext()
-    return g._context
 
 def create_app():
     # Initialize the environment
     shared.environment
     
-    app = Flask(__name__, static_folder='static')
-    
-    @app.before_request
+    web_app = Flask(__name__, static_folder='static')
+
+    @web_app.before_request
     def assign_version():
         # Check if we're forcing a version change
         force_version = request.args.get('force_version')
@@ -56,7 +31,7 @@ def create_app():
                 version = Version.A  # fallback for invalid cookie values
             set_context(version=version, update_cookie=False, utm_source=utm_source)
 
-    @app.after_request  
+    @web_app.after_request  
     def set_version_cookie(response):
         # Set cookie if user doesn't have one OR if we're forcing an update
         context = get_context()
@@ -67,40 +42,21 @@ def create_app():
                               samesite='Lax')
         return response
     
-    @app.route('/')
-    def index():
-        context = get_context()
-        
-        if context.version == Version.A:
-            return render_index_a()
-        # elif context.version == Version.B:
-        #     return render_index_b()
-        else:
-            return render_index_a()  # fallback
+    # Import all pages to trigger route registration
+    import pages.render_index
+    import pages.render_scroll_interrupt_letter  
+    import pages.render_mission
+    import pages.render_contribute
+    import pages.render_status
+    import pages.render_enddoomscrolling_letter
     
-    @app.route('/scroll-interrupt-letter')
-    def letter():
-        return render_scroll_interrupt_letter()
-     
-    @app.route('/mission')
-    def mission():
-        context = get_context()
-        return render_mission(context.version)
+    # Apply all registered routes to the Flask app
+    route_registry.apply_routes(web_app)
     
-    @app.route('/contribute')
-    def contribute():
-        context = get_context()
-        return render_contribute(context.version)
-    
-    @app.route('/status')
-    def status():
-        context = get_context()
-        return render_status(context.version)
-    
-    return app
+    return web_app
 
-app = create_app()
+web_app = create_app()
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    web_app.run(host='0.0.0.0', port=port, debug=True)

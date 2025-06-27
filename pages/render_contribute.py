@@ -1,7 +1,13 @@
 from utils.html_ import html
 from pages.render_base import render_base
+from shared_dependencies import route
 
-def render_contribute(version: str) -> str:
+@route('/contribute')
+def render_contribute() -> str:
+    from request_context import get_context
+    context = get_context()
+    version = context.version
+    
     content = html(f"""
         <!-- Contribute Header -->
         <section class="px-8 py-32 md:px-16 lg:px-24">
