@@ -99,12 +99,7 @@ def render_scroll_interrupt_letter() -> str:
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're tackling the problem head on, and we're not afraid to dream big.
-                </p>
-                
-                <p class="text-xl md:text-2xl leading-relaxed font-medium">
-                    Sincerely,<br>
-                    The Intention Team
+                    We're tackling the problem head on, and we need your support to make it happen.
                 </p>
             </div>
 
@@ -113,7 +108,7 @@ def render_scroll_interrupt_letter() -> str:
                     Join Us
                 </h2>
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're a group of tech veterans who left their jobs to build something meaningful. We'd love to continue this conversation with you.
+                    We're a group of tech veterans who left their jobs to build something meaningful.
                 <p class="text-xl md:text-2xl leading-relaxed">
                     Sign up to help shape our vision, hear about important updates, and get early access. 
                 </p>
@@ -136,6 +131,17 @@ def render_scroll_interrupt_letter() -> str:
                             class="text-xl bg-transparent border-0 border-b-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors pb-2"
                             required
                         >
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <p class="text-xl md:text-2xl leading-relaxed font-bold">
+                            What social media platform should we tackle first? (optional)
+                        </p>
+                        <textarea 
+                            name="comments"
+                            placeholder="Leave any comments or suggestions here!"
+                            rows="4"
+                            class="text-lg bg-transparent border-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors p-4 resize-vertical"
+                        ></textarea>
                     </div>
                     <div class="flex flex-col gap-4">
                         <p class="text-xl md:text-2xl leading-relaxed font-bold">
