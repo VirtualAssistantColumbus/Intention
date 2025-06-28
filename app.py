@@ -49,6 +49,7 @@ def create_app():
     import pages.render_contribute
     import pages.render_status
     import pages.render_enddoomscrolling_letter
+    import pages.render_boredom_letter
     
     # Apply all registered routes to the Flask app
     route_registry.apply_routes(web_app)
