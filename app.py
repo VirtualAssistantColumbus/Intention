@@ -45,6 +45,7 @@ def create_app():
     # Import all pages to trigger route registration
     import pages.render_index
     import pages.render_scroll_interrupt_letter  
+    import pages.render_linkedin_letter
     import pages.render_mission
     import pages.render_contribute
     import pages.render_status
