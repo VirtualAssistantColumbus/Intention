@@ -24,7 +24,7 @@ def render_linkedin_letter() -> str:
                         
                         // Track LinkedIn conversion
                         if (typeof window.lintrk !== 'undefined') {{
-                            window.lintrk('track', {{ conversion_id: 20266052 }});
+                            window.lintrk('track', {{ conversion_id: 20266060 }});
                         }}
                     }});
                 }}
