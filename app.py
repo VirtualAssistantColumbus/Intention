@@ -46,8 +46,8 @@ def create_app():
     import pages.index
     import pages.scroll_interrupt_letter  
     import pages.linkedin_letter
-    import pages.mission
-    import pages.contribute
+    import pages.principles
+    import pages.team
     import pages.status
     import pages.enddoomscrolling_letter
     import pages.boredom_letter

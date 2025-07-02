@@ -1,6 +1,6 @@
 from utils.html_ import html
 
-def render_nav() -> str:
+def nav() -> str:
     """
     Renders a minimal sticky bottom navigation bar.
     Only include this on pages where navigation is needed.
@@ -13,11 +13,11 @@ def render_nav() -> str:
                     <a href="/" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
                         Home
                     </a>
-                    <a href="/mission" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
-                        Mission
+                    <a href="/principles" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
+                        Principles
                     </a>
-                    <a href="/contribute" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
-                        Contribute
+                    <a href="/team" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
+                        About
                     </a>
                 </div>
             </div>

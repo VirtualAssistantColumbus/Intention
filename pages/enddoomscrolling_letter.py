@@ -1,6 +1,6 @@
 from request_context import get_context
 from utils.html_ import html
-from components.render_base import render_base
+from components.base import base
 from shared_dependencies import route
 
 
@@ -193,4 +193,4 @@ def render_enddoomscrolling_letter() -> str:
         </section>
     """)
     
-    return render_base(content)
+    return base(content)

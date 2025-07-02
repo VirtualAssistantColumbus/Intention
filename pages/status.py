@@ -1,5 +1,5 @@
 from utils.html_ import html
-from components.render_base import render_base
+from components.base import base
 from shared_dependencies import route
 
 @route('/status')
@@ -22,4 +22,4 @@ def render_status() -> str:
         </section>
     """)
     
-    return render_base(content) 
+    return base(content) 

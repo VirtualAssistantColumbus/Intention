@@ -1,6 +1,7 @@
 from utils.html_ import html
-from components.render_base import render_base
-from components.render_nav import render_nav
+from components.base import base
+from components.nav import nav
+from components.social_proof import social_proof
 from shared_dependencies import route
 from request_context import Version
 
@@ -37,7 +38,7 @@ def render_index_a() -> str:
                         }}
                     }});
                 }}
-            }}
+            }});
         </script>
 
         <!-- Section 1: Social media is broken -->
@@ -70,17 +71,24 @@ def render_index_a() -> str:
             </div>
         </section>
 
+
         <!-- Section 3: Join us -->
-        <section class="px-8 py-32 md:px-16 lg:px-24">
+        <section class="px-4 py-32 md:px-16 lg:px-24">
             <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight">
                 Join us.
             </h1>
+                   
+            <p class="text-3xl md:text-5xl font-medium leading-tight">
+                We're starting a movement of people choosing to live intentionally and take their lives back from technology.
+            </p>
+
+            <div class="py-16 pb-16">
+                { social_proof() }
+            </div>
+            
             <div class="max-w-4xl space-y-8 mb-16">
                 <p class="text-3xl md:text-5xl font-medium leading-tight">
-                    We're on a mission to make technology serve humanity again.
-                </p>
-                <p class="text-3xl md:text-5xl font-medium leading-tight">
-                    Sign up to know when we launch.
+                    Sign up to help shape our vision and get early access.
                 </p>
             </div>
             
@@ -111,7 +119,7 @@ def render_index_a() -> str:
                 </div>
             </form>
         </section>
-        { render_nav() }
+        { nav() }
     """)
     
-    return render_base(content)
+    return base(content)

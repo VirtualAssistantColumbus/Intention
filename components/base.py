@@ -1,7 +1,7 @@
 from utils.html_ import html
 from shared_dependencies import shared
 
-def render_base(content: str) -> str:
+def base(content: str) -> str:
     from app import get_context
     context = get_context()
     

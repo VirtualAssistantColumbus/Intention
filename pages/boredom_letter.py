@@ -1,5 +1,5 @@
 from utils.html_ import html
-from components.render_base import render_base
+from components.base import base
 from shared_dependencies import route
 
 @route('/boredom-letter')
@@ -189,4 +189,4 @@ def render_boredom_letter() -> str:
         </section>
     """)
     
-    return render_base(content)
+    return base(content)
