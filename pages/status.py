@@ -1,5 +1,5 @@
 from utils.html_ import html
-from pages.render_base import render_base
+from components.render_base import render_base
 from shared_dependencies import route
 
 @route('/status')

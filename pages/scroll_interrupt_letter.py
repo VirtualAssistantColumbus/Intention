@@ -1,9 +1,9 @@
 from utils.html_ import html
-from pages.render_base import render_base
+from components.render_base import render_base
 from shared_dependencies import route
 
-@route('/linkedin-letter')
-def render_linkedin_letter() -> str:
+@route('/scroll-interrupt-letter')
+def render_scroll_interrupt_letter() -> str:
     from request_context import get_context
     context = get_context()
     
@@ -22,9 +22,9 @@ def render_linkedin_letter() -> str:
                             }});
                         }}
                         
-                        // Track LinkedIn conversion
-                        if (typeof window.lintrk !== 'undefined') {{
-                            window.lintrk('track', {{ conversion_id: 20266060 }});
+                        // Track Complete Registration with Facebook Pixel
+                        if (typeof fbq !== 'undefined') {{
+                            fbq('track', 'CompleteRegistration');
                         }}
                     }});
                 }}

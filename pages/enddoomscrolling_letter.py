@@ -1,10 +1,11 @@
+from request_context import get_context
 from utils.html_ import html
-from pages.render_base import render_base
+from components.render_base import render_base
 from shared_dependencies import route
 
-@route('/scroll-interrupt-letter')
-def render_scroll_interrupt_letter() -> str:
-    from request_context import get_context
+
+@route('/enddoomscrolling-letter')
+def render_enddoomscrolling_letter() -> str:
     context = get_context()
     
     content = html(f"""
@@ -34,13 +35,21 @@ def render_scroll_interrupt_letter() -> str:
         <!-- Open Letter Header -->
         <section class="px-8 pt-16 pb-8 md:px-16 lg:px-24">
             <h1 class="text-massive-mobile md:text-massive font-bold mb-10 leading-none tracking-tight">
-                Dear Reader,
+                Hi,
             </h1>
 
             <!-- Letter Content -->
             <div class="max-w-4xl space-y-8">
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're sorry we interrupted your scrolling, but also… we're not sorry. Because getting people to spend less time scrolling is exactly the point of our company.
+                    You're probably wondering.
+                </p>
+                
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    "Why am I looking at a flyer with nothing on it but enddoomscrolling.com?"
+                </p>
+                
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    Well, because that's the mission of our company, Intention. We are a Columbus-based startup on a mission to end doomscrolling and improve the relationship between humanity and the technology we use on a daily basis.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">

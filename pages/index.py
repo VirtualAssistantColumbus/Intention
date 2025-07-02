@@ -1,5 +1,6 @@
 from utils.html_ import html
-from pages.render_base import render_base
+from components.render_base import render_base
+from components.render_nav import render_nav
 from shared_dependencies import route
 from request_context import Version
 
@@ -54,7 +55,7 @@ def render_index_a() -> str:
             </div>
         </section>
 
-        <!-- Section 2: So we're fixing it -->
+        <!-- Section 2: Fixing it -->
         <section class="px-8 py-32 md:px-16 lg:px-24">
             <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight">
                 So we're fixing it.
@@ -110,6 +111,7 @@ def render_index_a() -> str:
                 </div>
             </form>
         </section>
+        { render_nav() }
     """)
     
     return render_base(content)

@@ -1,11 +1,12 @@
-from request_context import get_context
 from utils.html_ import html
-from pages.render_base import render_base
+from components.render_base import render_base
 from shared_dependencies import route
 
+@route('/boredom-letter-2')
+def render_boredom_letter_2() -> str:
+    """ Added social proof images. """
 
-@route('/enddoomscrolling-letter')
-def render_enddoomscrolling_letter() -> str:
+    from request_context import get_context
     context = get_context()
     
     content = html(f"""
@@ -45,71 +46,63 @@ def render_enddoomscrolling_letter() -> str:
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    "Why am I looking at a flyer with nothing on it but enddoomscrolling.com?"
+                    "Why are you advertising boredom? Who wants to be bored?"
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Well, because that's the mission of our company, Intention. We are a Columbus-based startup on a mission to end doomscrolling and improve the relationship between humanity and the technology we use on a daily basis.
+                    That's a great question. And the answer is, well, no one.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    The average person will spend about 9 years of their life chasing down social media rabbit holes. We don't know about you, but we think that's unacceptable.
+                    Boredom isn't comfortable. It's a natural instinct that says "hey, maybe you should be doing something instead of just sitting there." Boredom drives us to be curious, to learn new things, and to get out into the world and do things.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    You see, it's not just the scrolling itself that bothers us, it's what the scrolling replaces that's most concerning.
+                    But we think there is another, often ignored, aspect to being bored. Boredom gives you time for your mind to wander, time for your brain to process your thoughts, experiences, and emotions, and time for you to self-reflect and introspect.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Meaningful connection. Peace of mind. Moments of reflection. Downtime. Time to process your thoughts and emotions.
+                    In the modern world, boredom has all but disappeared. Instead, it's been replaced by a never-ending stream of notifications, messages, and social media feeds that are designed to be as addictive as possible. The modern world promises (and delivers) on one thing: you will never have to be bored again.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Heck, boredom even.
+                    In fact, you will never have to really think again either. You will never need to be alone with your thoughts. Never need to confront the things that are bothering you. Never need to deeply consider what you value in life and the type of person you want to be.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We believe that these are essential functions for human beings to thrive, and yet they've gone noticeably missing from our modern-day society.
+                    If you're being honest with yourself, how often do you find yourself scrolling endlessly on social media because you're actually avoiding a feeling or a thought? Do you really want to live like you're afraid of your own mind?
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    That's why we've made it our mission to fix our relationship with technology.
+                    At Intention, we don't think that's an acceptable way to live your life.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We believe that technology should serve humanity, not take advantage of us. Technology should help each of us rise to our highest selves, instead of keeping us trapped in our worst habits. Technology should empower us rather than drain us.
+                    We think what the modern world needs most is more quiet moments of reflection, more self-honesty, and more living with intention instead of distraction.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Today we are far from that vision. Every day, we are bombarded by an endless stream of notifications and messages. We consume social media feeds that never end, designed to be as addictive as possible. We deal with so much information that most of us feel completely overwhelmed.
+                    That's why we've made it our mission to bring back boredom into the modern world. We're doing this by creating a series of apps that reimagine our relationship with technology. Apps that help you reclaim your attention from addictive devices, and create space for you to have moments of reflection, and maybe even, a little room to breathe.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    At Intention, we think we all deserve better.
-                </p>
-                
-                <p class="text-xl md:text-2xl leading-relaxed">
-                    We believe that every app you use should respect your attention as if it were the most valuable asset you have—because it is.
-                </p>
-                
-                <p class="text-xl md:text-2xl leading-relaxed">
-                    We believe that you should control your devices, instead of your devices controlling you. That you should be able to access the apps you need, without a million distractions trying to make you forget why you opened the app in the first place.
-                </p>
-                
-                <p class="text-xl md:text-2xl leading-relaxed">
-                    So that's what we're building.
+                    Imagine social media feeds with curated content that <strong>ends</strong>, instead of being infinite.
                 </p>           
 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're reimagining the apps and devices you use on a daily basis to give you control of what you want to see, and what you don't.
+                    Imagine apps that let you get in and get out, without distractions, so you can do exactly what you intended to do and nothing more.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're designing a paradigm shift in the way you connect with social media and your devices, by creating apps that begin and end with intention.
+                    Imagine apps designed to help you take control of your devices again, so they don't control you.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're tackling the problem head on, and we need your support to make it happen.
+                    We dream of a world where the apps you use on a daily basis respect your attention as if it were the most valuable asset you have.
+                </p>
+                
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    Dream with us.
                 </p>
             </div>
 
@@ -119,8 +112,13 @@ def render_enddoomscrolling_letter() -> str:
                 </h2>
                 <p class="text-xl md:text-2xl leading-relaxed">
                     We're a group of tech veterans who left their jobs to build something meaningful.
+                </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Sign up to help shape our vision, hear about important updates, and get early access. 
+                    Over the next few months, we'll be releasing a series of apps designed to reimagine our relationship with our devices. 
+                </p>
+                <p class="text-xl md:text-2xl leading-relaxed">
+                   
+                   Sign up to help shape our vision, hear about important updates, and get early access. 
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
                     No spam.
@@ -144,10 +142,10 @@ def render_enddoomscrolling_letter() -> str:
                     </div>
                     <div class="flex flex-col gap-4">
                         <p class="text-xl md:text-2xl leading-relaxed font-bold">
-                            What social media platform should we tackle first? (optional)
+                            Tell us why this message resonates with you (optional).
                         </p>
                         <textarea 
-                            name="comments"
+                            name="boredom-resonance"
                             placeholder="Leave any comments or suggestions here!"
                             rows="4"
                             class="text-lg bg-transparent border-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors p-4 resize-vertical"
