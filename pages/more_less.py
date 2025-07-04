@@ -10,109 +10,125 @@ def more_less() -> str:
     
     content = html(f"""
         <section class="px-8 py-32 md:px-16 lg:px-24">
-            <div class="max-w-6xl mx-auto">
-                <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight text-center">
+            <div class="max-w-4xl">
+                <h1 class="text-massive-mobile md:text-massive font-bold mb-16 leading-none tracking-tight">
                     More/Less
                 </h1>
                 
-                <div class="space-y-16">
-                    <!-- Introduction -->
-                    <div class="text-center max-w-4xl mx-auto">
-                        <p class="text-2xl md:text-3xl font-medium leading-tight">
-                            What we need more of, and what we need less of.
-                        </p>
+                <!-- Headers -->
+                <div class="grid grid-cols-2 gap-16 mb-8">
+                    <h2 class="text-2xl font-bold">More</h2>
+                    <h2 class="text-2xl font-bold">Less</h2>
+                </div>
+                
+                <!-- Rows -->
+                <div class="space-y-4">
+                    <!-- Row 1: Intention / Autopilot -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Intention</p>
+                        <p class="text-xl">Autopilot</p>
                     </div>
                     
-                    <!-- More/Less Grid -->
-                    <div class="space-y-12">
-                        <!-- Row 1: More intention, less automatic -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                            <div class="text-center md:text-right">
-                                <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">
-                                    More
-                                </div>
-                                <div class="text-xl md:text-2xl font-medium">
-                                    Intention
-                                </div>
-                            </div>
-                            <div class="text-center md:text-left">
-                                <div class="text-3xl md:text-4xl font-bold text-red-400 mb-2">
-                                    Less
-                                </div>
-                                <div class="text-xl md:text-2xl font-medium">
-                                    Automatic
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Row 2: More purpose, less apathy -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                            <div class="text-center md:text-right">
-                                <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">
-                                    More
-                                </div>
-                                <div class="text-xl md:text-2xl font-medium">
-                                    Purpose
-                                </div>
-                            </div>
-                            <div class="text-center md:text-left">
-                                <div class="text-3xl md:text-4xl font-bold text-red-400 mb-2">
-                                    Less
-                                </div>
-                                <div class="text-xl md:text-2xl font-medium">
-                                    Apathy
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Row 3: More discomfort (no pair) -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                            <div class="text-center md:text-right">
-                                <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">
-                                    More
-                                </div>
-                                <div class="text-xl md:text-2xl font-medium">
-                                    Discomfort
-                                </div>
-                            </div>
-                            <div class="text-center md:text-left opacity-40">
-                                <div class="text-xl md:text-2xl font-medium italic">
-                                    —
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Row 4: More consequence, less cushion -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                            <div class="text-center md:text-right">
-                                <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">
-                                    More
-                                </div>
-                                <div class="text-xl md:text-2xl font-medium">
-                                    Consequence
-                                </div>
-                            </div>
-                            <div class="text-center md:text-left">
-                                <div class="text-3xl md:text-4xl font-bold text-red-400 mb-2">
-                                    Less
-                                </div>
-                                <div class="text-xl md:text-2xl font-medium">
-                                    Cushion
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Add more rows as needed -->
-                        
+                    <!-- Row 2: Purpose / Apathy -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Purpose</p>
+                        <p class="text-xl">Apathy</p>
                     </div>
                     
-                    <!-- Optional: Add a note about the philosophy -->
-                    <div class="text-center max-w-4xl mx-auto pt-16 border-t border-gray-700">
-                        <p class="text-lg md:text-xl leading-relaxed opacity-80">
-                            Sometimes growth requires embracing what feels uncomfortable, 
-                            choosing deliberate action over passive consumption, 
-                            and accepting the natural consequences of our choices.
-                        </p>
+                    <!-- Row 3: Discomfort / Ease -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Discomfort</p>
+                        <p class="text-xl">Ease</p>
+                    </div>
+                    
+                    <!-- Row 4: Consequence / Cushion -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Consequence</p>
+                        <p class="text-xl">Cushion</p>
+                    </div>
+                    
+                    <!-- Row 5: Boredom / Stimulation -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Boredom</p>
+                        <p class="text-xl">Stimulation</p>
+                    </div>
+                    
+                    <!-- Row 6: Introspection / (no pair) -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Introspection</p>
+                        <p class="text-xl">Distraction</p>
+                    </div>
+                    
+                    <!-- Row 7: Reflection / (no pair) -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Reflection</p>
+                        <p class="text-xl">Face Value</p>
+                    </div>
+                    
+                    <!-- Row 8: Instinct / Doubt -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Instinct</p>
+                        <p class="text-xl">Doubt</p>
+                    </div>
+                    
+                    <!-- Row 9: Peace / Anxiety -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Peace</p>
+                        <p class="text-xl">Anxiety</p>
+                    </div>
+                    
+                    <!-- Row 10: Agency / Helplessness -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Agency</p>
+                        <p class="text-xl">Helplessness</p>
+                    </div>
+                    
+                    <!-- Row 11: Influence / Worry -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Influence</p>
+                        <p class="text-xl">Worry</p>
+                    </div>
+                    
+                    <!-- Row 12: Substance / Ceremony -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Substance</p>
+                        <p class="text-xl">Ceremony</p>
+                    </div>
+                    
+                    <!-- Row 13: Connection / Cheap Substitutes -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Connection</p>
+                        <p class="text-xl">Cheap Substitutes</p>
+                    </div>
+                    
+                    <!-- Row 14: Integrative Thinking / Reductionism -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Holistic</p>
+                        <p class="text-xl">Reductionist</p>
+                    </div>
+                    
+                    <!-- Row 15: Contrast / Constant -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Contrast</p>
+                        <p class="text-xl">Constant</p>
+                    </div>
+                    
+                    <!-- Row 16: Discovery / Learning -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Discovery</p>
+                        <p class="text-xl">Learning</p>
+                    </div>
+                    
+                    <!-- Row 17: Clarity / Clutter -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Clarity</p>
+                        <p class="text-xl">Clutter</p>
+                    </div>
+                    
+                    <!-- Row 18: Wonder / Indifference -->
+                    <div class="grid grid-cols-2 gap-16">
+                        <p class="text-xl">Wonder</p>
+                        <p class="text-xl">Indifference</p>
                     </div>
                 </div>
             </div>
@@ -121,4 +137,4 @@ def more_less() -> str:
         { nav() }
     """)
     
-    return base(content) 
+    return base(content)
