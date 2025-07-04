@@ -144,4 +144,4 @@ route_registry = RouteRegistry()
 # Convenience decorator
 def route(rule: str, endpoint: str = None, methods: List[str] = None, **options) -> Callable:
     """Custom @route decorator that registers routes in the registry"""
-    return route_registry.register(rule, endpoint, methods, **options) 
+    return route_registry.register(rule, endpoint, methods, **options)
