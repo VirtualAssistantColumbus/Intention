@@ -15,6 +15,9 @@ def nav() -> str:
                     <a href="/" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
                         Home
                     </a>
+                    <a href="/mission" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
+                        Mission
+                    </a>
                     <a href="/principles" class="text-lg font-medium text-white hover:text-gray-300 transition-colors">
                         Principles
                     </a>
@@ -43,6 +46,9 @@ def nav() -> str:
                     <div class="flex flex-col">
                         <a href="/" class="text-lg font-medium text-white hover:text-gray-300 transition-colors py-3 px-8 border-b border-gray-800">
                             Home
+                        </a>
+                        <a href="/mission" class="text-lg font-medium text-white hover:text-gray-300 transition-colors py-3 px-8 border-b border-gray-800">
+                            Mission
                         </a>
                         <a href="/principles" class="text-lg font-medium text-white hover:text-gray-300 transition-colors py-3 px-8 border-b border-gray-800">
                             Principles

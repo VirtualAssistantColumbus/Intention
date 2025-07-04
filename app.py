@@ -44,15 +44,18 @@ def create_app():
     
     # Import all pages to trigger route registration
     import pages.index
+    import pages.mission
+    import pages.team
+    import pages.more_less
+    import pages.principles
+    
+    import pages.status
+    
     import pages.scroll_interrupt_letter  
     import pages.linkedin_letter
-    import pages.principles
-    import pages.team
-    import pages.status
     import pages.enddoomscrolling_letter
     import pages.boredom_letter
     import pages.boredom_letter_2
-    import pages.more_less
     
     # Apply all registered routes to the Flask app
     route_registry.apply_routes(web_app)
