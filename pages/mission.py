@@ -27,4 +27,4 @@ def mission() -> str:
         { nav() }
     """)
     
-    return base(content) 
+    return base(content)

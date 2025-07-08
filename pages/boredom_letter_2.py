@@ -117,76 +117,94 @@ def render_boredom_letter_2() -> str:
                     Over the next few months, we'll be releasing a series of apps designed to reimagine our relationship with our devices. 
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
-                   
-                   Sign up to help shape our vision, hear about important updates, and get early access. 
-                </p>
-                <p class="text-xl md:text-2xl leading-relaxed">
-                    No spam.
+                    We want you to be part of the movement.
                 </p>           
             </div>
             
             <!-- Conversational Form -->
             <div class="max-w-4xl">
                 <form class="space-y-8">
-                    <div class="flex flex-col gap-4">
-                        <p class="text-xl md:text-2xl leading-relaxed font-bold">
-                            How can we reach you?
-                        </p>
-                        <input 
-                            name="email"
-                            type="email" 
-                            placeholder="your.email@example.com"
-                            class="text-xl bg-transparent border-0 border-b-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors pb-2"
-                            required
-                        >
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <p class="text-xl md:text-2xl leading-relaxed font-bold">
-                            Tell us why this message resonates with you (optional).
-                        </p>
-                        <textarea 
-                            name="boredom-resonance"
-                            placeholder="Leave any comments or suggestions here!"
-                            rows="4"
-                            class="text-lg bg-transparent border-2 border-white text-white placeholder-gray-400 focus:outline-none focus:border-gray-300 transition-colors p-4 resize-vertical"
-                        ></textarea>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <p class="text-xl md:text-2xl leading-relaxed font-bold">
-                            Can we reach out to you for feedback on our products? (optional)
-                        </p>
-                        <div class="flex flex-col gap-3">
-                            <label class="flex items-center gap-3 cursor-pointer">
-                                <input 
-                                    type="radio" 
-                                    name="feedback_consent" 
-                                    value="yes"
-                                    class="w-5 h-5 text-white border-2 border-white bg-transparent focus:ring-white focus:ring-2"
-                                >
-                                <span class="text-lg md:text-xl">Yes, please reach out</span>
-                            </label>
-                            <label class="flex items-center gap-3 cursor-pointer">
-                                <input 
-                                    type="radio" 
-                                    name="feedback_consent" 
-                                    value="no"
-                                    class="w-5 h-5 text-white border-2 border-white bg-transparent focus:ring-white focus:ring-2"
-                                >
-                                <span class="text-lg md:text-xl">No, just keep me updated</span>
-                            </label>
+                    <div class="bg-white p-6 rounded-lg">
+                        <div class="flex flex-col gap-4">
+                            <p class="text-xl md:text-2xl leading-relaxed font-bold text-black">
+                                What's your email?
+                            </p>
+                            <input 
+                                name="email"
+                                type="email" 
+                                placeholder="your.email@example.com"
+                                class="text-xl bg-transparent border-0 border-b-2 border-black text-black placeholder-gray-500 focus:outline-none focus:border-gray-600 transition-colors pb-2"
+                                required
+                            >
                         </div>
                     </div>
+                    <div class="bg-white p-6 rounded-lg">
+                        <div class="flex flex-col gap-4">
+                            <p class="text-xl md:text-2xl leading-relaxed font-bold text-black">
+                                If you'd like, tell us why this message resonates with you.
+                            </p>
+                            <textarea 
+                                name="comments"
+                                placeholder="Leave any comments or suggestions here!"
+                                rows="4"
+                                class="text-lg bg-transparent border-2 border-black text-black placeholder-gray-500 focus:outline-none focus:border-gray-600 transition-colors p-4 resize-vertical"
+                            ></textarea>
+                            <p class="text-base leading-relaxed">
+                                <span class="text-black font-medium">We personally read every comment.</span> <span class="text-gray-700">Your thoughts will be instrumental towards helping us create a future where technology works for everyone.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="page-id" value="boredom-letter-2">
                     <input type="hidden" name="utm_source" value="{context.utm_source or 'none'}">
                     <input type="hidden" name="version" value="{context.version}">
                     <div class="pt-4">
                         <button 
                             type="submit"
-                            class="px-8 py-4 text-xl bg-white text-black font-medium hover:bg-gray-200 transition-colors rounded-none"
+                            class="px-8 py-4 text-xl bg-white text-black font-medium hover:bg-gray-200 transition-colors rounded-lg"
                         >
                             Count me in
                         </button>
                     </div>
                 </form>
+            </div>
+        </section>
+    """)
+    
+    return base(content)
+
+
+@route('/boredom-letter-2-post-sign-up')
+def render_boredom_letter_2_post_sign_up() -> str:
+    """ Thank you page after form submission. """
+
+    content = html("""
+        <!-- Thank You Header -->
+        <section class="px-8 pt-16 pb-8 md:px-16 lg:px-24">
+            <h1 class="text-massive-mobile md:text-massive font-bold mb-10 leading-none tracking-tight">
+                Thank you for joining this mission.
+            </h1>
+
+            <!-- Thank You Content -->
+            <div class="max-w-4xl space-y-8">
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    Can you do us a quick favor?
+                </p>
+                
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    We just sent you an email with the question:
+                </p>
+                
+                <p class="text-xl md:text-2xl leading-relaxed font-bold">
+                    "What social media platform do you hate the most?"
+                </p>
+                
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    We'd love if you could go to your email right now, while it's top of mind, and reply to our email.
+                </p>
+                
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    We want this to be a conversation. In order to make technology work for people again, we need to talk with people.
+                </p>
             </div>
         </section>
     """)
