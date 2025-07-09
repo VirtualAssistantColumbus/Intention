@@ -172,7 +172,7 @@ def render_boredom_letter_2_post_sign_up() -> str:
 
             <div class="max-w-4xl space-y-8">
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Will you share your input?
+                    Thank you for joining our mission to make technology serve humanity again. Will you share your input?
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
