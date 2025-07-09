@@ -146,7 +146,7 @@ def render_boredom_letter_2() -> str:
                             type="submit"
                             class="px-8 py-4 text-xl bg-white text-black font-medium hover:bg-gray-200 transition-colors rounded-lg"
                         >
-                            Count me in
+                            Next
                         </button>
                     </div>
                 </form>
