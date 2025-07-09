@@ -138,22 +138,6 @@ def render_boredom_letter_2() -> str:
                             >
                         </div>
                     </div>
-                    <div class="bg-white p-6 rounded-lg">
-                        <div class="flex flex-col gap-4">
-                            <p class="text-xl md:text-2xl leading-relaxed font-bold text-black">
-                                If you'd like, tell us why this message resonates with you.
-                            </p>
-                            <textarea 
-                                name="comments"
-                                placeholder="Leave any comments or suggestions here!"
-                                rows="4"
-                                class="text-lg bg-transparent border-2 border-black text-black placeholder-gray-500 focus:outline-none focus:border-gray-600 transition-colors p-4 resize-vertical"
-                            ></textarea>
-                            <p class="text-base leading-relaxed">
-                                <span class="text-black font-medium">We personally read every comment.</span> <span class="text-gray-700">Your thoughts will be instrumental towards helping us create a future where technology works for everyone.</span>
-                            </p>
-                        </div>
-                    </div>
                     <input type="hidden" name="page" value="boredom-letter-2">
                     <input type="hidden" name="utm_source" value="{context.utm_source or 'none'}">
                     <input type="hidden" name="version" value="{context.version}">
