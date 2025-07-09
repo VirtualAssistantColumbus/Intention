@@ -154,7 +154,7 @@ def render_boredom_letter_2() -> str:
                             </p>
                         </div>
                     </div>
-                    <input type="hidden" name="page-id" value="boredom-letter-2">
+                    <input type="hidden" name="page" value="boredom-letter-2">
                     <input type="hidden" name="utm_source" value="{context.utm_source or 'none'}">
                     <input type="hidden" name="version" value="{context.version}">
                     <div class="pt-4">
@@ -172,41 +172,34 @@ def render_boredom_letter_2() -> str:
     
     return base(content)
 
-
 @route('/boredom-letter-2-post-sign-up')
 def render_boredom_letter_2_post_sign_up() -> str:
     """ Thank you page after form submission. """
 
     content = html("""
-        <!-- Thank You Header -->
+
+
+        <!-- Question Header -->
         <section class="px-8 pt-16 pb-8 md:px-16 lg:px-24">
             <h1 class="text-massive-mobile md:text-massive font-bold mb-10 leading-none tracking-tight">
-                Thank you for joining this mission.
+                Thank you.
             </h1>
 
-            <!-- Thank You Content -->
             <div class="max-w-4xl space-y-8">
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Can you do us a quick favor?
+                    We're making technology serve humanity again and we need your input.
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We just sent you an email with the question:
+                    We actually just <strong>sent you an email</strong> with a quick question in it.
                 </p>
-                
-                <p class="text-xl md:text-2xl leading-relaxed font-bold">
-                    "What social media platform do you hate the most?"
-                </p>
-                
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We'd love if you could go to your email right now, while it's top of mind, and reply to our email.
+                    If you wouldn't mind, could you <strong>write us a response</strong> while this is still top of mind?
                 </p>
-                
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We want this to be a conversation. In order to make technology work for people again, we need to talk with people.
-                </p>
-            </div>
-        </section>
+                    We personally read every response, and your thoughts will help inform our product roadmap.<br><br>
+                    Warmly,<br>
+                    The Intention Team
     """)
     
     return base(content)

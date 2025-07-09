@@ -658,3 +658,1038 @@ Environment setup complete:
 Environment(
     runtime_environment=local
 )
+
+[2025-07-08 20:58:46,430] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 20:58:46,431] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 20:58:46,431] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 20:58:46,431] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 20:58:46,807] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 20:58:46,807] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 20:58:46,807] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 20:58:46,807] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:00:14,754] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:00:14,754] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:00:14,754] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:00:14,754] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:00:16,270] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:00:16,271] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:00:16,271] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:00:16,271] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:00:44,172] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:00:44,172] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:00:44,173] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:00:44,173] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:00:58,526] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:00:58,527] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:00:58,527] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:00:58,527] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:01:05,285] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:01:05,286] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:01:05,286] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:01:05,286] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:01:10,060] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:01:10,060] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:01:10,061] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:01:10,061] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:01:31,750] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:01:31,751] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:01:31,751] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:01:31,751] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:01:42,857] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:01:42,857] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:01:42,857] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:01:42,857] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:03:07,707] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:03:07,707] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:03:07,707] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:03:07,707] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:05:12,878] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:05:12,879] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:05:12,879] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:05:12,879] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:05:50,330] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:05:50,330] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:05:50,330] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:05:50,330] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:05:58,405] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:05:58,406] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:05:58,406] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:05:58,406] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:06:30,688] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:06:30,691] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:06:30,693] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:06:30,694] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:06:32,244] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:06:32,246] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:06:32,247] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:06:32,248] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:06:38,113] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:06:38,113] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:06:38,113] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:06:38,114] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:06:40,746] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:06:40,746] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:06:40,747] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:06:40,747] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:07:00,213] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:07:00,213] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:07:00,214] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:07:00,214] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:07:35,584] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:07:35,584] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:07:35,584] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:07:35,584] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:07:38,221] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:07:38,221] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:07:38,221] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:07:38,222] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:07:55,561] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:07:55,561] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:07:55,562] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:07:55,562] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:00,388] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:00,389] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:00,389] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:00,389] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:20,955] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:20,956] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:20,956] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:20,956] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:22,475] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:22,475] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:22,475] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:22,476] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:25,086] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:25,086] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:25,087] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:25,087] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:31,865] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:31,866] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:31,866] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:31,866] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:38,571] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:38,571] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:38,572] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:38,572] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:45,410] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:45,411] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:45,411] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:45,411] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:08:55,491] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:08:55,491] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:08:55,491] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:08:55,491] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:09:05,668] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:09:05,668] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:09:05,669] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:09:05,669] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:09:24,147] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:09:24,147] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:09:24,147] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:09:24,148] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:09:29,961] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:09:29,961] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:09:29,962] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:09:29,962] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:02,229] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:02,229] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:02,229] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:02,230] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:05,815] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:05,815] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:05,816] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:05,816] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:06,271] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:06,272] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:06,272] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:06,272] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:15,275] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:15,275] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:15,275] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:15,276] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:27,393] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:27,394] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:27,394] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:27,395] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:30,016] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:30,017] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:30,017] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:30,018] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:48,443] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:48,443] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:48,444] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:48,444] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:10:52,097] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:10:52,097] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:10:52,097] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:10:52,097] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:11:09,642] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:11:09,642] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:11:09,642] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:11:09,642] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:11:18,573] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:11:18,574] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:11:18,574] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:11:18,574] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:11:28,511] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:11:28,511] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:11:28,511] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:11:28,511] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:11:29,978] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:11:29,978] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:11:29,979] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:11:29,979] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:11:47,461] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:11:47,461] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:11:47,462] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:11:47,462] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:12:45,022] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:12:45,022] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:12:45,022] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:12:45,022] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:13:09,638] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:13:09,638] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:13:09,638] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:13:09,638] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:13:14,261] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:13:14,261] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:13:14,261] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:13:14,262] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:13:22,243] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:13:22,243] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:13:22,243] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:13:22,244] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:13:32,218] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:13:32,218] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:13:32,218] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:13:32,218] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:13:52,903] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:13:52,904] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:13:52,904] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:13:52,904] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:13:58,729] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:13:58,729] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:13:58,729] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:13:58,729] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:14:10,898] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:14:10,898] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:14:10,898] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:14:10,898] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:14:14,534] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:14:14,535] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:14:14,536] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:14:14,537] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:15:00,451] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:15:00,451] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:15:00,452] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:15:00,452] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:15:20,967] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:15:20,968] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:15:20,968] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:15:20,968] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:15:38,539] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:15:38,539] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:15:38,539] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:15:38,539] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:15:50,566] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:15:50,567] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:15:50,567] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:15:50,567] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:15:58,377] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:15:58,377] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:15:58,377] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:15:58,377] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:16:06,229] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:16:06,229] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:16:06,229] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:16:06,229] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:16:26,846] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:16:26,846] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:16:26,847] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:16:26,847] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:16:41,067] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:16:41,068] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:16:41,068] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:16:41,068] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:16:42,688] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:16:42,688] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:16:42,689] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:16:42,690] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:16:55,749] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:16:55,749] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:16:55,749] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:16:55,749] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:17:00,455] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:17:00,456] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:17:00,456] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:17:00,456] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:17:22,051] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:17:22,051] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:17:22,051] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:17:22,052] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:17:37,344] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:17:37,344] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:17:37,344] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:17:37,344] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
+
+[2025-07-08 21:17:38,925] [INFO] [shared_dependencies.py -> environment() -> 65]
+Setting up environment configuration...
+
+[2025-07-08 21:17:38,926] [INFO] [shared_dependencies.py -> environment() -> 73]
+Found RUNTIME_ENVIRONMENT: 'local'
+
+[2025-07-08 21:17:38,926] [INFO] [shared_dependencies.py -> environment() -> 76]
+Successfully parsed runtime environment: local
+
+[2025-07-08 21:17:38,926] [INFO] [shared_dependencies.py -> environment() -> 85]
+Environment setup complete:
+Environment(
+    runtime_environment=local
+)
