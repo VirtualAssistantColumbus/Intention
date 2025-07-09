@@ -1,3 +1,4 @@
+from components.nav import nav
 from utils.html_ import html
 from components.base import base
 from shared_dependencies import route
@@ -160,30 +161,32 @@ def render_boredom_letter_2() -> str:
 def render_boredom_letter_2_post_sign_up() -> str:
     """ Thank you page after form submission. """
 
-    content = html("""
+    content = html(f"""
 
 
         <!-- Question Header -->
         <section class="px-8 pt-16 pb-8 md:px-16 lg:px-24">
             <h1 class="text-massive-mobile md:text-massive font-bold mb-10 leading-none tracking-tight">
-                Thank you.
+                Share your voice.
             </h1>
 
             <div class="max-w-4xl space-y-8">
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We're making technology serve humanity again and we need your input.
+                    Will you share your input?
                 </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We actually just <strong>sent you an email</strong> with a quick question in it.
+                    We just <strong>sent you an email</strong> with a quick question in it.
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    If you wouldn't mind, could you <strong>write us a response</strong> while this is still top of mind?
+                    Could you <strong>write us a response</strong> while this is top of mind?
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
                     We personally read every response, and your thoughts will help inform our product roadmap.<br><br>
-                    Warmly,<br>
+                    Thank you,<br>
                     The Intention Team
+                   
+        { nav() }
     """)
     
     return base(content)
