@@ -178,7 +178,7 @@ def render_boredom_letter_2_post_sign_up() -> str:
                     If you have a minute, could you <strong>write us a response</strong> while this is top of mind?
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We personally read every message, and your thoughts will help inform what we build and inspire us to bring it to life.
+                    We personally read every message, and your thoughts will help inspire what we build.
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
                     Thank you for joining our mission to make technology serve humanity again.
