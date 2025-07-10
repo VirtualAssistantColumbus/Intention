@@ -162,24 +162,25 @@ def render_boredom_letter_2_post_sign_up() -> str:
     """ Thank you page after form submission. """
 
     content = html(f"""
-
-
         <!-- Question Header -->
         <section class="px-8 pt-16 pb-8 md:px-16 lg:px-24">
             <h1 class="text-massive-mobile md:text-massive font-bold mb-10 leading-none tracking-tight">
-                Share your voice.
+                Share your thoughts.
             </h1>
 
             <div class="max-w-4xl space-y-8">
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Thank you for joining our mission to make technology serve humanity again. Will you share your input?
-                </p>
+                    Thank you for joining our mission to make technology serve humanity again.
+                    </p>
+                    <p class="text-xl md:text-2xl leading-relaxed font-bold">
+                        What was it about our mission that resonated with you?
+                    </p>
                 
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    We just <strong>sent you an email</strong> with a quick question in it.
+                    We just <strong>sent you an email</strong> with this question in it, and we'd love to hear your thoughts.
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
-                    Could you <strong>write us a response</strong> while this is top of mind?
+                    If you have a minute, could you <strong>write us a response</strong> while this is top of mind?
                 </p>
                 <p class="text-xl md:text-2xl leading-relaxed">
                     We personally read every response, and your thoughts will help inform our product roadmap.<br><br>
