@@ -56,6 +56,7 @@ def create_app():
     import pages.enddoomscrolling_letter
     import pages.boredom_letter
     import pages.boredom_letter_2
+    import pages.boredom_letter_2_post_sign_up
     
     # Apply all registered routes to the Flask app
     route_registry.apply_routes(web_app)
